@@ -1,0 +1,38 @@
+.sideMenuList {
+    list-style: none;
+
+    &Item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -10px;
+        padding: 0 25px 0 20px;
+        cursor: pointer;
+        height: 50px;
+        margin-bottom: 15px;
+        transition: background-color 0.15s ease-in-out;
+        border-radius: 30px;
+
+        &:hover {
+            background-color: rgb(29, 161, 242, 0.1);
+            border-radius: 30px;
+            & h6 {
+                color: rgb(29, 161, 242);
+            }
+            & svg {
+                color: rgb(29, 161, 242);
+            }
+        }
+
+        &Label {
+            font-weight: 600 !important;
+            font-size: 18px !important;
+            margin-left: 15px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        &Icon {
+            font-size: 32px !important;
+            margin-left: -5px;
+        }
+    }
+}
